@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappingRoot domainID="com.ibm.msl.mapping.xml" domainIDExtension="zosconnect" jsonWrapped="true" jsonWrapperName="zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0" targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/POST" version="8.0.5.0" xmlns="http://www.ibm.com/2008/ccl/Mapping" xmlns:map="http://www.ibm.com/zosConnect/2.0/mapping/POST">
+    <inlinedXMLSchema targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST" xmlns:tns="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST"> 
+  <xsd:element name="zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0" type="tns:zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0"/> 
+  <xsd:complexType name="zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0"> 
+    <xsd:sequence> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_INPUT_CANAL_HEADER" type="tns:RG_CA10_I_INPUT_CANAL_HEADER"/> 
+      <xsd:element minOccurs="0" name="CA_ST_REG_INQ" type="tns:CA_ST_REG_INQ"/> 
+    </xsd:sequence> 
+  </xsd:complexType> 
+  <xsd:complexType name="RG_CA10_I_INPUT_CANAL_HEADER"> 
+    <xsd:sequence> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_COD_INTERFAZ"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="4"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_COD_INSTITUCION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_CANAL_USUARIO"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="8"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_K_USR_CODIGO"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="7"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_GREM_94"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_CTA_ESP"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_NRO_OPE_CANAL"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="8"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_VERSION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="2"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_EXT_OPE"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_NRO_OPE_CANAL_A_EXT"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="8"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_TERMINAL_CANAL"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="15"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_TERM_CICS_TETI"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="4"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_KEY_MACRO_OPE" type="tns:RG_CA10_I_KEY_MACRO_OPE"/> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_K_USR_CODIGO_SUP"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="7"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_AUTORIZACION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_MODO_ENTRADA"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_NEXT_DAY"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_HORA_CANAL"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="8"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FECHA_CANAL"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="8"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_STR_FWRD"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_SUCURSAL_OPERACION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="3"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_AGENCIA_OPERACION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="3"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_FLAG_CONSUMO_SRV"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_DISPONIBLE"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="153"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_VERSION_HEADER"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="1"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+    </xsd:sequence> 
+  </xsd:complexType> 
+  <xsd:complexType name="RG_CA10_I_KEY_MACRO_OPE"> 
+    <xsd:sequence> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_MOP_K_CODIGO"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="6"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="RG_CA10_I_MOP_K_VERSION"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="2"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+    </xsd:sequence> 
+  </xsd:complexType> 
+  <xsd:complexType name="CA_ST_REG_INQ"> 
+    <xsd:sequence> 
+      <xsd:element minOccurs="0" name="CA_ST_COD_CTA_COM_I"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="14"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="CA_ST_COD_PRD_ST_I"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="3"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="CA_ST_FLAG_COBCOM_I"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="2"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="CA_ST_FLAG_CBAS_SLDS_I"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="4"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+      <xsd:element minOccurs="0" name="FILL_0"> 
+        <xsd:simpleType> 
+          <xsd:restriction base="xsd:string"> 
+            <xsd:maxLength value="3221"/> 
+          </xsd:restriction> 
+        </xsd:simpleType> 
+      </xsd:element> 
+    </xsd:sequence> 
+  </xsd:complexType> 
+</xsd:schema>]]></inlinedXMLSchema>
+    <inlinedXMLSchema targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST"><![CDATA[
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST" xmlns:body="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST" xmlns:tns="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+ 
+      <xsd:import namespace="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST" schemaLocation="../schema_0.xsd"></xsd:import> 
+ 
+      <xsd:element name="HTTPRequest" type="tns:HTTPRequestType"></xsd:element> 
+ 
+      <xsd:complexType name="HTTPRequestType"> 
+        <xsd:sequence> 
+          <xsd:element name="Headers" type="tns:HeadersType"></xsd:element> 
+          <xsd:element name="PathParameters" type="tns:PathParametersType"></xsd:element> 
+          <xsd:element name="QueryParameters" type="tns:QueryParametersType"></xsd:element> 
+          <xsd:element name="Body" type="tns:BodyType"></xsd:element> 
+        </xsd:sequence> 
+      </xsd:complexType> 
+ 
+      <xsd:complexType name="HeadersType"> 
+        <xsd:sequence> 
+        	<xsd:element maxOccurs="1" minOccurs="0" name="Authorization" type="xsd:string"></xsd:element> 
+                    <xsd:element maxOccurs="1" minOccurs="0" name="interfaz" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="cod-institucion" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="canal-usuario" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="usr_codigo" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="grem94" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="cta-esp" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="nro-ope" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="flag-extorno" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="nro-ope-ext" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="term-canal" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="term-cics" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="user-code-sup" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="flag-aut" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="flag-mod-ent" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="hora-canal" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="fecha-canal" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="flag-str-fwrd" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="sucursal" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="agencia" type="xsd:string"></xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="MirrorTrans" type="xsd:string"></xsd:element> 
+        </xsd:sequence> 
+      </xsd:complexType> 
+ 
+      <xsd:complexType name="PathParametersType"> 
+        <xsd:sequence> 
+        </xsd:sequence> 
+      </xsd:complexType> 
+ 
+      <xsd:complexType name="QueryParametersType"> 
+        <xsd:sequence> 
+        </xsd:sequence> 
+      </xsd:complexType> 
+ 
+      <xsd:complexType name="BodyType"> 
+        <xsd:sequence> 
+          <xsd:element ref="body:zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0"></xsd:element> 
+        </xsd:sequence> 
+      </xsd:complexType> 
+    </xsd:schema>]]></inlinedXMLSchema>
+    <input inlinedXMLSchema="true" path="../schema_1.xsd" targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST" var="rootInput"></input>
+    <output inlinedXMLSchema="true" path="../schema_0.xsd" targetNamespace="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST" var="rootOutput"></output>
+    <namespaces>
+        <namespace kind="supplement" prefix="in" uri="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST"></namespace>
+        <namespace kind="supplement" prefix="out" uri="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST"></namespace>
+    </namespaces>
+    <mappingDeclaration name="POST.">
+        <input namespace="http://www.ibm.com/zosConnect/2.0/mapping/HTTP/input/POST" path="$rootInput/HTTPRequest"></input>
+        <output namespace="http://www.ibm.com/zosConnect/2.0/mapping/JSON/output/POST" path="$rootOutput/zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0"></output>
+        <passthrough>
+            <input path="Body/zoscee%5Finterfaz%5FSTDA%5Fv1%2E0%2E0"></input>
+            <output path="."></output>
+            <updates>
+                <move>
+                    <input httpIn="header" path="Headers/interfaz" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_COD_INTERFAZ" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/cod-institucion" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_COD_INSTITUCION" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/canal-usuario" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_CANAL_USUARIO" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/usr_codigo" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_K_USR_CODIGO" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/grem94" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_GREM_94" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/cta-esp" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_CTA_ESP" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/nro-ope" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_NRO_OPE_CANAL" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <assign value="01">
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_VERSION" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <move>
+                    <input httpIn="header" path="Headers/flag-extorno" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_EXT_OPE" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/nro-ope-ext" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_NRO_OPE_CANAL_A_EXT" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/term-canal" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_TERMINAL_CANAL" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/term-cics" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_TERM_CICS_TETI" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/user-code-sup" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_K_USR_CODIGO_SUP" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_KEY_MACRO_OPE/RG_CA10_I_MOP_K_CODIGO" shape="1,2,3" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_KEY_MACRO_OPE/RG_CA10_I_MOP_K_VERSION" shape="1,2,3" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <move>
+                    <input httpIn="header" path="Headers/flag-aut" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_AUTORIZACION" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/flag-mod-ent" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_MODO_ENTRADA" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_NEXT_DAY" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <move>
+                    <input httpIn="header" path="Headers/hora-canal" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_HORA_CANAL" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/fecha-canal" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FECHA_CANAL" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/flag-str-fwrd" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_STR_FWRD" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/sucursal" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_SUCURSAL_OPERACION" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <move>
+                    <input httpIn="header" path="Headers/agencia" required="false" shape="1" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></input>
+                    <output httpIn="body" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_AGENCIA_OPERACION" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </move>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_FLAG_CONSUMO_SRV" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_DISPONIBLE" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+                <assign>
+                    <output httpIn="body" omitFromInterface="true" path="RG_CA10_I_INPUT_CANAL_HEADER/RG_CA10_I_VERSION_HEADER" shape="1,2" xsdBuiltInOrDerivedSimpleType="http://www.w3.org/2001/XMLSchema:string"></output>
+                </assign>
+            </updates>
+        </passthrough>
+    </mappingDeclaration>
+</mappingRoot>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="STDA_request" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="STDA_request">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="RG_CA10_I_INPUT_CANAL_HEADER" originalName="RG_CA10_I_INPUT_CANAL_HEADER" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER">
+                <startPos>1</startPos>
+                <bytes>256</bytes>
+                <maxBytes>256</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="RG_CA10_I_COD_INTERFAZ" originalName="RG_CA10_I_COD_INTERFAZ" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_COD_INTERFAZ">
+                    <startPos>1</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_COD_INSTITUCION" originalName="RG_CA10_I_COD_INSTITUCION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_COD_INSTITUCION">
+                    <startPos>5</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_CANAL_USUARIO" originalName="RG_CA10_I_CANAL_USUARIO" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_CANAL_USUARIO">
+                    <startPos>6</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="FILL_0" originalName="FILL_0" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0" redefines="RG_CA10_I_CANAL_USUARIO">
+                    <startPos>6</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="RG_CA10_I_CANAL_TIPO" originalName="RG_CA10_I_CANAL_TIPO" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0.RG_CA10_I_CANAL_TIPO">
+                        <startPos>6</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_I_CANAL_INST" originalName="RG_CA10_I_CANAL_INST" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0.RG_CA10_I_CANAL_INST">
+                        <startPos>7</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_I_CANAL_APL" originalName="RG_CA10_I_CANAL_APL" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0.RG_CA10_I_CANAL_APL">
+                        <startPos>8</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_I_CANAL_AMB" originalName="RG_CA10_I_CANAL_AMB" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0.RG_CA10_I_CANAL_AMB">
+                        <startPos>10</startPos>
+                        <bytes>3</bytes>
+                        <maxBytes>3</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_I_CANAL_DISPONIBLE" originalName="RG_CA10_I_CANAL_DISPONIBLE" included="N" path="RG_CA10_I_INPUT_CANAL_HEADER.FILL_0.RG_CA10_I_CANAL_DISPONIBLE">
+                        <startPos>13</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="RG_CA10_I_K_USR_CODIGO" originalName="RG_CA10_I_K_USR_CODIGO" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_K_USR_CODIGO">
+                    <startPos>14</startPos>
+                    <bytes>7</bytes>
+                    <maxBytes>7</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_GREM_94" originalName="RG_CA10_I_FLAG_GREM_94" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_GREM_94">
+                    <startPos>21</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_CTA_ESP" originalName="RG_CA10_I_FLAG_CTA_ESP" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_CTA_ESP">
+                    <startPos>22</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_NRO_OPE_CANAL" originalName="RG_CA10_I_NRO_OPE_CANAL" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_NRO_OPE_CANAL">
+                    <startPos>23</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_VERSION" originalName="RG_CA10_I_VERSION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_VERSION">
+                    <startPos>31</startPos>
+                    <bytes>2</bytes>
+                    <maxBytes>2</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_EXT_OPE" originalName="RG_CA10_I_FLAG_EXT_OPE" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_EXT_OPE">
+                    <startPos>33</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_NRO_OPE_CANAL_A_EXT" originalName="RG_CA10_I_NRO_OPE_CANAL_A_EXT" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_NRO_OPE_CANAL_A_EXT">
+                    <startPos>34</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_TERMINAL_CANAL" originalName="RG_CA10_I_TERMINAL_CANAL" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_TERMINAL_CANAL">
+                    <startPos>42</startPos>
+                    <bytes>15</bytes>
+                    <maxBytes>15</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_TERM_CICS_TETI" originalName="RG_CA10_I_TERM_CICS_TETI" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_TERM_CICS_TETI">
+                    <startPos>57</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_KEY_MACRO_OPE" originalName="RG_CA10_I_KEY_MACRO_OPE" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_KEY_MACRO_OPE">
+                    <startPos>61</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="RG_CA10_I_MOP_K_CODIGO" originalName="RG_CA10_I_MOP_K_CODIGO" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_KEY_MACRO_OPE.RG_CA10_I_MOP_K_CODIGO">
+                        <startPos>61</startPos>
+                        <bytes>6</bytes>
+                        <maxBytes>6</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_I_MOP_K_VERSION" originalName="RG_CA10_I_MOP_K_VERSION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_KEY_MACRO_OPE.RG_CA10_I_MOP_K_VERSION">
+                        <startPos>67</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="RG_CA10_I_K_USR_CODIGO_SUP" originalName="RG_CA10_I_K_USR_CODIGO_SUP" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_K_USR_CODIGO_SUP">
+                    <startPos>69</startPos>
+                    <bytes>7</bytes>
+                    <maxBytes>7</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_AUTORIZACION" originalName="RG_CA10_I_FLAG_AUTORIZACION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_AUTORIZACION">
+                    <startPos>76</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_MODO_ENTRADA" originalName="RG_CA10_I_FLAG_MODO_ENTRADA" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_MODO_ENTRADA">
+                    <startPos>77</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_NEXT_DAY" originalName="RG_CA10_I_FLAG_NEXT_DAY" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_NEXT_DAY">
+                    <startPos>78</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_HORA_CANAL" originalName="RG_CA10_I_HORA_CANAL" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_HORA_CANAL">
+                    <startPos>79</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FECHA_CANAL" originalName="RG_CA10_I_FECHA_CANAL" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FECHA_CANAL">
+                    <startPos>87</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_STR_FWRD" originalName="RG_CA10_I_FLAG_STR_FWRD" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_STR_FWRD">
+                    <startPos>95</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_SUCURSAL_OPERACION" originalName="RG_CA10_I_SUCURSAL_OPERACION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_SUCURSAL_OPERACION">
+                    <startPos>96</startPos>
+                    <bytes>3</bytes>
+                    <maxBytes>3</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_AGENCIA_OPERACION" originalName="RG_CA10_I_AGENCIA_OPERACION" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_AGENCIA_OPERACION">
+                    <startPos>99</startPos>
+                    <bytes>3</bytes>
+                    <maxBytes>3</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_FLAG_CONSUMO_SRV" originalName="RG_CA10_I_FLAG_CONSUMO_SRV" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_FLAG_CONSUMO_SRV">
+                    <startPos>102</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_DISPONIBLE" originalName="RG_CA10_I_DISPONIBLE" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_DISPONIBLE">
+                    <startPos>103</startPos>
+                    <bytes>153</bytes>
+                    <maxBytes>153</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_I_VERSION_HEADER" originalName="RG_CA10_I_VERSION_HEADER" included="Y" path="RG_CA10_I_INPUT_CANAL_HEADER.RG_CA10_I_VERSION_HEADER">
+                    <startPos>256</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+            </field>
+            <field name="CA_ST_REG_INQ" originalName="CA_ST_REG_INQ" included="Y" path="CA_ST_REG_INQ">
+                <startPos>1</startPos>
+                <bytes>3500</bytes>
+                <maxBytes>3500</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="CA_ST_HEADER_ESTANDAR_I" originalName="CA_ST_HEADER_ESTANDAR_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I">
+                    <startPos>1</startPos>
+                    <bytes>256</bytes>
+                    <maxBytes>256</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="CA_ST_COD_TRN_I" originalName="CA_ST_COD_TRN_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_COD_TRN_I">
+                        <startPos>1</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_INST_I" originalName="CA_ST_COD_INST_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_COD_INST_I">
+                        <startPos>5</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_CANAL_I" originalName="CA_ST_COD_CANAL_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_COD_CANAL_I">
+                        <startPos>6</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_USU_I" originalName="CA_ST_COD_USU_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_COD_USU_I">
+                        <startPos>14</startPos>
+                        <bytes>7</bytes>
+                        <maxBytes>7</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FLAG_VERIF1_I" originalName="CA_ST_FLAG_VERIF1_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_FLAG_VERIF1_I">
+                        <startPos>21</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FLAG_VERIF2_I" originalName="CA_ST_FLAG_VERIF2_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_FLAG_VERIF2_I">
+                        <startPos>22</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NRO_OPERACION_I" originalName="CA_ST_NRO_OPERACION_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_NRO_OPERACION_I">
+                        <startPos>23</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NRO_VERSION_I" originalName="CA_ST_NRO_VERSION_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_NRO_VERSION_I">
+                        <startPos>31</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FLAG_EXTORNO_I" originalName="CA_ST_FLAG_EXTORNO_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_FLAG_EXTORNO_I">
+                        <startPos>33</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_HEADER_DISPONIBLE_I" originalName="CA_ST_HEADER_DISPONIBLE_I" included="N" path="CA_ST_REG_INQ.CA_ST_HEADER_ESTANDAR_I.CA_ST_HEADER_DISPONIBLE_I">
+                        <startPos>34</startPos>
+                        <bytes>223</bytes>
+                        <maxBytes>223</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="CA_ST_COD_CTA_COM_I" originalName="CA_ST_COD_CTA_COM_I" included="Y" path="CA_ST_REG_INQ.CA_ST_COD_CTA_COM_I">
+                    <startPos>257</startPos>
+                    <bytes>14</bytes>
+                    <maxBytes>14</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="CA_ST_COD_PRD_ST_I" originalName="CA_ST_COD_PRD_ST_I" included="Y" path="CA_ST_REG_INQ.CA_ST_COD_PRD_ST_I">
+                    <startPos>271</startPos>
+                    <bytes>3</bytes>
+                    <maxBytes>3</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="CA_ST_FLAG_COBCOM_I" originalName="CA_ST_FLAG_COBCOM_I" included="Y" path="CA_ST_REG_INQ.CA_ST_FLAG_COBCOM_I">
+                    <startPos>274</startPos>
+                    <bytes>2</bytes>
+                    <maxBytes>2</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="CA_ST_FLAG_CBAS_SLDS_I" originalName="CA_ST_FLAG_CBAS_SLDS_I" included="Y" path="CA_ST_REG_INQ.CA_ST_FLAG_CBAS_SLDS_I">
+                    <startPos>276</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="FILL_0" originalName="FILL_0" included="Y" path="CA_ST_REG_INQ.FILL_0">
+                    <startPos>280</startPos>
+                    <bytes>3221</bytes>
+                    <maxBytes>3221</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>

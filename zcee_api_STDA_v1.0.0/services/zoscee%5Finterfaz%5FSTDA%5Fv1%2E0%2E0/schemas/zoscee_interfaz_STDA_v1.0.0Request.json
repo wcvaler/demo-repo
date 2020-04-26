@@ -1,0 +1,144 @@
+{
+  "type" : "object",
+  "properties" : {
+    "RG_CA10_I_INPUT_CANAL_HEADER" : {
+      "type" : "object",
+      "properties" : {
+        "RG_CA10_I_COD_INTERFAZ" : {
+          "maxLength" : 4,
+          "type" : "string"
+        },
+        "RG_CA10_I_COD_INSTITUCION" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_CANAL_USUARIO" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_I_K_USR_CODIGO" : {
+          "maxLength" : 7,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_GREM_94" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_CTA_ESP" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_NRO_OPE_CANAL" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_I_VERSION" : {
+          "maxLength" : 2,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_EXT_OPE" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_NRO_OPE_CANAL_A_EXT" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_I_TERMINAL_CANAL" : {
+          "maxLength" : 15,
+          "type" : "string"
+        },
+        "RG_CA10_I_TERM_CICS_TETI" : {
+          "maxLength" : 4,
+          "type" : "string"
+        },
+        "RG_CA10_I_KEY_MACRO_OPE" : {
+          "type" : "object",
+          "properties" : {
+            "RG_CA10_I_MOP_K_CODIGO" : {
+              "maxLength" : 6,
+              "type" : "string"
+            },
+            "RG_CA10_I_MOP_K_VERSION" : {
+              "maxLength" : 2,
+              "type" : "string"
+            }
+          }
+        },
+        "RG_CA10_I_K_USR_CODIGO_SUP" : {
+          "maxLength" : 7,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_AUTORIZACION" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_MODO_ENTRADA" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_NEXT_DAY" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_HORA_CANAL" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_I_FECHA_CANAL" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_STR_FWRD" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_SUCURSAL_OPERACION" : {
+          "maxLength" : 3,
+          "type" : "string"
+        },
+        "RG_CA10_I_AGENCIA_OPERACION" : {
+          "maxLength" : 3,
+          "type" : "string"
+        },
+        "RG_CA10_I_FLAG_CONSUMO_SRV" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_I_DISPONIBLE" : {
+          "maxLength" : 153,
+          "type" : "string"
+        },
+        "RG_CA10_I_VERSION_HEADER" : {
+          "maxLength" : 1,
+          "type" : "string"
+        }
+      }
+    },
+    "CA_ST_REG_INQ" : {
+      "type" : "object",
+      "properties" : {
+        "CA_ST_COD_CTA_COM_I" : {
+          "maxLength" : 14,
+          "type" : "string"
+        },
+        "CA_ST_COD_PRD_ST_I" : {
+          "maxLength" : 3,
+          "type" : "string"
+        },
+        "CA_ST_FLAG_COBCOM_I" : {
+          "maxLength" : 2,
+          "type" : "string"
+        },
+        "CA_ST_FLAG_CBAS_SLDS_I" : {
+          "maxLength" : 4,
+          "type" : "string"
+        },
+        "FILL_0" : {
+          "maxLength" : 3221,
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

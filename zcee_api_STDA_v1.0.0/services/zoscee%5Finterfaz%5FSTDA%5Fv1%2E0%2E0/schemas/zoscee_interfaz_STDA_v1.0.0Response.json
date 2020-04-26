@@ -1,0 +1,537 @@
+{
+  "type" : "object",
+  "properties" : {
+    "RG_CA10_O_OUTPUT_CANAL_HEADER" : {
+      "type" : "object",
+      "properties" : {
+        "RG_CA10_O_COD_INTERFAZ" : {
+          "maxLength" : 4,
+          "type" : "string"
+        },
+        "RG_CA10_O_COD_INSTITUCION" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_O_CANAL_USUARIO" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_O_RCODE" : {
+          "maxLength" : 6,
+          "type" : "string"
+        },
+        "RG_CA10_O_RC_MSG" : {
+          "maxLength" : 80,
+          "type" : "string"
+        },
+        "RG_CA10_O_NRO_OPE_CANAL" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_O_LONG_RESPUESTA" : {
+          "minimum" : 0,
+          "maximum" : 99999,
+          "type" : "integer"
+        },
+        "RG_CA10_O_FLAG_AUTORIZACION" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_O_TERMINAL_CANAL" : {
+          "maxLength" : 15,
+          "type" : "string"
+        },
+        "RG_CA10_O_TERM_CICS_TETI" : {
+          "maxLength" : 4,
+          "type" : "string"
+        },
+        "RG_CA10_O_K_USR_CODIGO" : {
+          "maxLength" : 7,
+          "type" : "string"
+        },
+        "RG_CA10_O_NRO_CONSULTA_FFNN" : {
+          "maxLength" : 8,
+          "type" : "string"
+        },
+        "RG_CA10_O_DISPONIBLE" : {
+          "maxLength" : 107,
+          "type" : "string"
+        },
+        "RG_CA10_O_VERSION_HEADER" : {
+          "maxLength" : 1,
+          "type" : "string"
+        },
+        "RG_CA10_O_FLAG_MULTIPLES_MSGS" : {
+          "maxLength" : 1,
+          "type" : "string"
+        }
+      }
+    },
+    "CA_ST_REG_OUT" : {
+      "type" : "object",
+      "properties" : {
+        "CA_ST_SEG_DATOS_O" : {
+          "type" : "object",
+          "properties" : {
+            "CA_ST_COD_CTA_COM_O" : {
+              "maxLength" : 14,
+              "type" : "string"
+            },
+            "CA_ST_COD_CTA_COM_EDIT" : {
+              "maxLength" : 17,
+              "type" : "string"
+            },
+            "CA_ST_NOM_TIT" : {
+              "maxLength" : 40,
+              "type" : "string"
+            },
+            "CA_ST_DIR_COR" : {
+              "maxLength" : 40,
+              "type" : "string"
+            },
+            "CA_ST_FEC_APRT" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_TIP_CTA_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_CTA_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_TIP_AHO_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_ACCT_TYPE" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_ACCT_DESC" : {
+              "maxLength" : 30,
+              "type" : "string"
+            },
+            "CA_ST_PRD_ABREV" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_MON_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_MON_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_TIP_MON" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_SEG_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_SEG_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_STA_CTA_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_STA_CTA_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_TIOAUX" : {
+              "maxLength" : 6,
+              "type" : "string"
+            },
+            "CA_ST_BRANCH" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_COBRO_IVA_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_COBRO_IVA_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_INST_COD_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_SDO_PRO_MES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_SDO_DIS" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_SDO_CON" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_TIP_BLQ_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_BLQ_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_FEC_DBLQ" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_COD_USU_BLQ" : {
+              "maxLength" : 7,
+              "type" : "string"
+            },
+            "CA_ST_CTA_ESP_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_L_MONY_ACTV_DATE" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_OFFICER" : {
+              "maxLength" : 7,
+              "type" : "string"
+            },
+            "CA_ST_MTD_CLOSE_THIS_MTH" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_MTD_CLOSE_THIS_DAY" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_LAST_CUST_ACTV_BK_DATE" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_IMP_LEDGER_BAL" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_FLOAT_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_PROJ_ACCR_INT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_YTD_INT_PAID" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_INT_PAYABLE" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_S_TRLR_SI_BEG_BAL" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_PP_TRLR_TOT_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_CLOSING_BALANCE" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_TOTAL_INT_PAID" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_COD_EMP_PGHBRS" : {
+              "maxLength" : 10,
+              "type" : "string"
+            },
+            "CA_ST_RUC_EMP_CTS" : {
+              "maxLength" : 10,
+              "type" : "string"
+            },
+            "CA_ST_COD_PLNTLL_COMIS" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_FLAG_EMIS_EECC" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_COD_INTERBANC" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_FEC_VCTO" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_FEC_SGT_INT" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_PLZ_CTA" : {
+              "minimum" : 0,
+              "maximum" : 9999,
+              "type" : "integer"
+            },
+            "CA_ST_TIP_PLZ_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_IP_CUR_ANNL_RATE" : {
+              "maxLength" : 12,
+              "type" : "string"
+            },
+            "CA_ST_FEC_PGO_INT" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_NRO_RENOVAC" : {
+              "maxLength" : 15,
+              "type" : "string"
+            },
+            "CA_ST_TIP_RENOVAC_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_RENOVAC_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_PGO_INT_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_PGO_INT_DES" : {
+              "maxLength" : 30,
+              "type" : "string"
+            },
+            "CA_ST_DIST_INT_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_DIST_INT_DES" : {
+              "maxLength" : 30,
+              "type" : "string"
+            },
+            "CA_ST_PGO_CAP_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_PGO_CAP_DES" : {
+              "maxLength" : 30,
+              "type" : "string"
+            },
+            "CA_ST_IMP_DEP_INI" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_NRO_CTA_AFF_1" : {
+              "maxLength" : 14,
+              "type" : "string"
+            },
+            "CA_ST_TIPO_CTA_AFF_1" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_NRO_CTA_AFF_2" : {
+              "maxLength" : 14,
+              "type" : "string"
+            },
+            "CA_ST_TIPO_CTA_AFF_2" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_PEN_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_TIP_PEN_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_NRO_DIAS_PEN" : {
+              "maxLength" : 15,
+              "type" : "string"
+            },
+            "CA_ST_LAST_RENEW_DATE" : {
+              "minimum" : 0,
+              "maximum" : 99999999,
+              "type" : "integer"
+            },
+            "CA_ST_IND_CTA_PLEDGE_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_IMP_SHS_PLEDGE_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IND_CTA_HOLD_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_IMP_SHS_HOLDS_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_INT_ACCRUED" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_COMISION_COBR" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_COMISION_PEND" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_BCP_DC_LTD_CRS" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_BCP_DC_LTD_INT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_BCP_DC_LTD_DRS" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_BCP_DC_LTD_FRZ" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_BCP_DC_FRZ_INT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_EMI_NOTIF_VCTO_COD" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_EMI_NOTIF_VCTO_DES" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_COD_EXONER_ITF" : {
+              "maxLength" : 4,
+              "type" : "string"
+            },
+            "CA_ST_IMP_SDO_PGOHAB" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_IMP_ITF_DELDIA" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_COD_CIC" : {
+              "maxLength" : 12,
+              "type" : "string"
+            },
+            "CA_ST_COD_TELEFONO" : {
+              "maxLength" : 14,
+              "type" : "string"
+            },
+            "CA_ST_CLOSED_DATE" : {
+              "maxLength" : 8,
+              "type" : "string"
+            },
+            "CA_ST_MTD_DEP_NO" : {
+              "minimum" : 0,
+              "maximum" : 999,
+              "type" : "integer"
+            },
+            "CA_ST_MTD_DEP_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_MTD_WD_NO" : {
+              "minimum" : 0,
+              "maximum" : 999,
+              "type" : "integer"
+            },
+            "CA_ST_MTD_WD_AMT" : {
+              "maxLength" : 20,
+              "type" : "string"
+            },
+            "CA_ST_GL_CC_4" : {
+              "maxLength" : 5,
+              "type" : "string"
+            },
+            "FILL_0" : {
+              "maxLength" : 143,
+              "type" : "string"
+            },
+            "CA_ST_REG_MOV" : {
+              "type" : "array",
+              "maxItems" : 20,
+              "minItems" : 20,
+              "items" : {
+                "type" : "object",
+                "properties" : {
+                  "CA_ST_FEC_MOV" : {
+                    "minimum" : 0,
+                    "maximum" : 99999999,
+                    "type" : "integer"
+                  },
+                  "CA_ST_FEC_VALUTA" : {
+                    "minimum" : 0,
+                    "maximum" : 99999999,
+                    "type" : "integer"
+                  },
+                  "CA_ST_REF_MOV" : {
+                    "maxLength" : 22,
+                    "type" : "string"
+                  },
+                  "CA_ST_IMP_OPE_MOV" : {
+                    "maxLength" : 20,
+                    "type" : "string"
+                  },
+                  "CA_ST_COD_AGE_SUC_MOV" : {
+                    "maxLength" : 6,
+                    "type" : "string"
+                  },
+                  "CA_ST_COD_USU_MOV" : {
+                    "maxLength" : 7,
+                    "type" : "string"
+                  },
+                  "CA_ST_NRO_TRN_MOV" : {
+                    "minimum" : 0,
+                    "maximum" : 9999999,
+                    "type" : "integer"
+                  }
+                }
+              }
+            },
+            "FILL_1" : {
+              "maxLength" : 199,
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

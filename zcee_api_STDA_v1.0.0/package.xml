@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<zosConnectApi xmlns="http://www.ibm.com/zosConnect/2.0/zosConnectApi" id="zcee_api_stda_v1.0.0">
+    <apiSpec title="zcee_api_stda_v1.0.0" basePath="/syst/stda/v1.0.0" description="" version="1.0.0">
+        <path relativePath="/">
+            <method type="POST" zosConnectServiceRef="zoscee_interfaz_STDA_v1.0.0" httpXformFile="api/POST/mapping.xml" operationId="postZoscee_interfaz_STDA_v1.0.0"/>
+        </path>
+        <apiDoc docType="SWAGGER">api-docs/swagger.json</apiDoc>
+    </apiSpec>
+</zosConnectApi>

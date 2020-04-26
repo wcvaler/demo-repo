@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:message xmlns:ns2="http://www.ibm.com/ims/Transaction" transactionCode="" messageName="STDA_resposte" direction="0" serviceType="CICS_COMM_AREA">
+    <message id="1" name="STDA_resposte">
+        <segment id="1" name="COMMAREA" originalName="COMMAREA">
+            <field name="RG_CA10_O_OUTPUT_CANAL_HEADER" originalName="RG_CA10_O_OUTPUT_CANAL_HEADER" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER">
+                <startPos>1</startPos>
+                <bytes>256</bytes>
+                <maxBytes>256</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="RG_CA10_O_COD_INTERFAZ" originalName="RG_CA10_O_COD_INTERFAZ" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_COD_INTERFAZ">
+                    <startPos>1</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_COD_INSTITUCION" originalName="RG_CA10_O_COD_INSTITUCION" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_COD_INSTITUCION">
+                    <startPos>5</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_CANAL_USUARIO" originalName="RG_CA10_O_CANAL_USUARIO" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_CANAL_USUARIO">
+                    <startPos>6</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="FILL_0" originalName="FILL_0" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0" redefines="RG_CA10_O_CANAL_USUARIO">
+                    <startPos>6</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="RG_CA10_O_CANAL_TIPO" originalName="RG_CA10_O_CANAL_TIPO" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0.RG_CA10_O_CANAL_TIPO">
+                        <startPos>6</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_CANAL_INST" originalName="RG_CA10_O_CANAL_INST" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0.RG_CA10_O_CANAL_INST">
+                        <startPos>7</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_CANAL_APL" originalName="RG_CA10_O_CANAL_APL" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0.RG_CA10_O_CANAL_APL">
+                        <startPos>8</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_CANAL_AMB" originalName="RG_CA10_O_CANAL_AMB" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0.RG_CA10_O_CANAL_AMB">
+                        <startPos>10</startPos>
+                        <bytes>3</bytes>
+                        <maxBytes>3</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_CANAL_DISPONIBLE" originalName="RG_CA10_O_CANAL_DISPONIBLE" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_0.RG_CA10_O_CANAL_DISPONIBLE">
+                        <startPos>13</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="RG_CA10_O_RCODE" originalName="RG_CA10_O_RCODE" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_RCODE">
+                    <startPos>14</startPos>
+                    <bytes>6</bytes>
+                    <maxBytes>6</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="FILL_1" originalName="FILL_1" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_1" redefines="RG_CA10_O_RCODE">
+                    <startPos>14</startPos>
+                    <bytes>6</bytes>
+                    <maxBytes>6</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="RG_CA10_O_RC_APL" originalName="RG_CA10_O_RC_APL" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_1.RG_CA10_O_RC_APL">
+                        <startPos>14</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_RC_TIP" originalName="RG_CA10_O_RC_TIP" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_1.RG_CA10_O_RC_TIP">
+                        <startPos>16</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="RG_CA10_O_RC_SEC" originalName="RG_CA10_O_RC_SEC" included="N" path="RG_CA10_O_OUTPUT_CANAL_HEADER.FILL_1.RG_CA10_O_RC_SEC">
+                        <startPos>18</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="RG_CA10_O_RC_MSG" originalName="RG_CA10_O_RC_MSG" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_RC_MSG">
+                    <startPos>20</startPos>
+                    <bytes>80</bytes>
+                    <maxBytes>80</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_NRO_OPE_CANAL" originalName="RG_CA10_O_NRO_OPE_CANAL" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_NRO_OPE_CANAL">
+                    <startPos>100</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_LONG_RESPUESTA" originalName="RG_CA10_O_LONG_RESPUESTA" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_LONG_RESPUESTA">
+                    <startPos>108</startPos>
+                    <bytes>5</bytes>
+                    <maxBytes>5</maxBytes>
+                    <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                        <typeConverter>ZONEDDECIMAL</typeConverter>
+                    </marshaller>
+                    <applicationDatatype datatype="DECIMAL" precision="5" scale="0"/>
+                </field>
+                <field name="RG_CA10_O_FLAG_AUTORIZACION" originalName="RG_CA10_O_FLAG_AUTORIZACION" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_FLAG_AUTORIZACION">
+                    <startPos>113</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_TERMINAL_CANAL" originalName="RG_CA10_O_TERMINAL_CANAL" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_TERMINAL_CANAL">
+                    <startPos>114</startPos>
+                    <bytes>15</bytes>
+                    <maxBytes>15</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_TERM_CICS_TETI" originalName="RG_CA10_O_TERM_CICS_TETI" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_TERM_CICS_TETI">
+                    <startPos>129</startPos>
+                    <bytes>4</bytes>
+                    <maxBytes>4</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_K_USR_CODIGO" originalName="RG_CA10_O_K_USR_CODIGO" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_K_USR_CODIGO">
+                    <startPos>133</startPos>
+                    <bytes>7</bytes>
+                    <maxBytes>7</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_NRO_CONSULTA_FFNN" originalName="RG_CA10_O_NRO_CONSULTA_FFNN" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_NRO_CONSULTA_FFNN">
+                    <startPos>140</startPos>
+                    <bytes>8</bytes>
+                    <maxBytes>8</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_DISPONIBLE" originalName="RG_CA10_O_DISPONIBLE" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_DISPONIBLE">
+                    <startPos>148</startPos>
+                    <bytes>107</bytes>
+                    <maxBytes>107</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_VERSION_HEADER" originalName="RG_CA10_O_VERSION_HEADER" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_VERSION_HEADER">
+                    <startPos>255</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+                <field name="RG_CA10_O_FLAG_MULTIPLES_MSGS" originalName="RG_CA10_O_FLAG_MULTIPLES_MSGS" included="Y" path="RG_CA10_O_OUTPUT_CANAL_HEADER.RG_CA10_O_FLAG_MULTIPLES_MSGS">
+                    <startPos>256</startPos>
+                    <bytes>1</bytes>
+                    <maxBytes>1</maxBytes>
+                    <applicationDatatype datatype="CHAR"/>
+                </field>
+            </field>
+            <field name="CA_ST_REG_OUT" originalName="CA_ST_REG_OUT" included="Y" path="CA_ST_REG_OUT">
+                <startPos>1</startPos>
+                <bytes>3500</bytes>
+                <maxBytes>3500</maxBytes>
+                <applicationDatatype datatype="STRUCT"/>
+                <field name="CA_ST_HEADER_ESTANDAR_O" originalName="CA_ST_HEADER_ESTANDAR_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O">
+                    <startPos>1</startPos>
+                    <bytes>256</bytes>
+                    <maxBytes>256</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="CA_ST_COD_TRN_O" originalName="CA_ST_COD_TRN_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_COD_TRN_O">
+                        <startPos>1</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_INST_O" originalName="CA_ST_COD_INST_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_COD_INST_O">
+                        <startPos>5</startPos>
+                        <bytes>1</bytes>
+                        <maxBytes>1</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_CANAL_O" originalName="CA_ST_COD_CANAL_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_COD_CANAL_O">
+                        <startPos>6</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_RET" originalName="CA_ST_COD_RET" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_COD_RET">
+                        <startPos>14</startPos>
+                        <bytes>6</bytes>
+                        <maxBytes>6</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TXT_RET" originalName="CA_ST_TXT_RET" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET">
+                        <startPos>20</startPos>
+                        <bytes>80</bytes>
+                        <maxBytes>80</maxBytes>
+                        <applicationDatatype datatype="STRUCT"/>
+                        <field name="CA_ST_TXT_RET_COD" originalName="CA_ST_TXT_RET_COD" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET.CA_ST_TXT_RET_COD">
+                            <startPos>20</startPos>
+                            <bytes>6</bytes>
+                            <maxBytes>6</maxBytes>
+                            <applicationDatatype datatype="STRUCT"/>
+                            <field name="CA_ST_TXT_RET_APL" originalName="CA_ST_TXT_RET_APL" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET.CA_ST_TXT_RET_COD.CA_ST_TXT_RET_APL">
+<startPos>20</startPos>
+<bytes>2</bytes>
+<maxBytes>2</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                            <field name="CA_ST_TXT_RET_NRO" originalName="CA_ST_TXT_RET_NRO" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET.CA_ST_TXT_RET_COD.CA_ST_TXT_RET_NRO">
+<startPos>22</startPos>
+<bytes>4</bytes>
+<maxBytes>4</maxBytes>
+<applicationDatatype datatype="CHAR"/>
+                            </field>
+                        </field>
+                        <field name="CA_ST_TXT_RET_GUION" originalName="CA_ST_TXT_RET_GUION" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET.CA_ST_TXT_RET_GUION">
+                            <startPos>26</startPos>
+                            <bytes>1</bytes>
+                            <maxBytes>1</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CA_ST_TXT_RET_GLOSA" originalName="CA_ST_TXT_RET_GLOSA" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_TXT_RET.CA_ST_TXT_RET_GLOSA">
+                            <startPos>27</startPos>
+                            <bytes>73</bytes>
+                            <maxBytes>73</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                    </field>
+                    <field name="CA_ST_NRO_OPERACION_O" originalName="CA_ST_NRO_OPERACION_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_NRO_OPERACION_O">
+                        <startPos>100</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_LNG_MSG" originalName="CA_ST_LNG_MSG" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_LNG_MSG">
+                        <startPos>108</startPos>
+                        <bytes>5</bytes>
+                        <maxBytes>5</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="5" scale="0"/>
+                    </field>
+                    <field name="CA_ST_HEADER_DISPONIBLE_O" originalName="CA_ST_HEADER_DISPONIBLE_O" included="N" path="CA_ST_REG_OUT.CA_ST_HEADER_ESTANDAR_O.CA_ST_HEADER_DISPONIBLE_O">
+                        <startPos>113</startPos>
+                        <bytes>144</bytes>
+                        <maxBytes>144</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="CA_ST_SEG_DATOS_O" originalName="CA_ST_SEG_DATOS_O" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O">
+                    <startPos>257</startPos>
+                    <bytes>3244</bytes>
+                    <maxBytes>3244</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="CA_ST_COD_CTA_COM_O" originalName="CA_ST_COD_CTA_COM_O" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_CTA_COM_O">
+                        <startPos>257</startPos>
+                        <bytes>14</bytes>
+                        <maxBytes>14</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_CTA_COM_EDIT" originalName="CA_ST_COD_CTA_COM_EDIT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_CTA_COM_EDIT">
+                        <startPos>271</startPos>
+                        <bytes>17</bytes>
+                        <maxBytes>17</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NOM_TIT" originalName="CA_ST_NOM_TIT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_NOM_TIT">
+                        <startPos>288</startPos>
+                        <bytes>40</bytes>
+                        <maxBytes>40</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_DIR_COR" originalName="CA_ST_DIR_COR" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_DIR_COR">
+                        <startPos>328</startPos>
+                        <bytes>40</bytes>
+                        <maxBytes>40</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FEC_APRT" originalName="CA_ST_FEC_APRT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FEC_APRT">
+                        <startPos>368</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_TIP_CTA_COD" originalName="CA_ST_TIP_CTA_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_CTA_COD">
+                        <startPos>376</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_CTA_DES" originalName="CA_ST_TIP_CTA_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_CTA_DES">
+                        <startPos>380</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_AHO_DES" originalName="CA_ST_TIP_AHO_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_AHO_DES">
+                        <startPos>400</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_ACCT_TYPE" originalName="CA_ST_ACCT_TYPE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_ACCT_TYPE">
+                        <startPos>420</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_ACCT_DESC" originalName="CA_ST_ACCT_DESC" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_ACCT_DESC">
+                        <startPos>424</startPos>
+                        <bytes>30</bytes>
+                        <maxBytes>30</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PRD_ABREV" originalName="CA_ST_PRD_ABREV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PRD_ABREV">
+                        <startPos>454</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MON_COD" originalName="CA_ST_MON_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MON_COD">
+                        <startPos>458</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MON_DES" originalName="CA_ST_MON_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MON_DES">
+                        <startPos>462</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_MON" originalName="CA_ST_TIP_MON" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_MON">
+                        <startPos>482</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_SEG_COD" originalName="CA_ST_TIP_SEG_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_SEG_COD">
+                        <startPos>486</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_SEG_DES" originalName="CA_ST_TIP_SEG_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_SEG_DES">
+                        <startPos>490</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_STA_CTA_COD" originalName="CA_ST_STA_CTA_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_STA_CTA_COD">
+                        <startPos>510</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_STA_CTA_DES" originalName="CA_ST_STA_CTA_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_STA_CTA_DES">
+                        <startPos>514</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIOAUX" originalName="CA_ST_TIOAUX" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIOAUX">
+                        <startPos>534</startPos>
+                        <bytes>6</bytes>
+                        <maxBytes>6</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_BRANCH" originalName="CA_ST_BRANCH" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_BRANCH">
+                        <startPos>540</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COBRO_IVA_COD" originalName="CA_ST_COBRO_IVA_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COBRO_IVA_COD">
+                        <startPos>544</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COBRO_IVA_DES" originalName="CA_ST_COBRO_IVA_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COBRO_IVA_DES">
+                        <startPos>548</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_INST_COD_DES" originalName="CA_ST_INST_COD_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_INST_COD_DES">
+                        <startPos>568</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_SDO_PRO_MES" originalName="CA_ST_IMP_SDO_PRO_MES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_SDO_PRO_MES">
+                        <startPos>588</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_SDO_DIS" originalName="CA_ST_SDO_DIS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_SDO_DIS">
+                        <startPos>608</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_SDO_CON" originalName="CA_ST_SDO_CON" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_SDO_CON">
+                        <startPos>628</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_BLQ_COD" originalName="CA_ST_TIP_BLQ_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_BLQ_COD">
+                        <startPos>648</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_BLQ_DES" originalName="CA_ST_TIP_BLQ_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_BLQ_DES">
+                        <startPos>652</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FEC_DBLQ" originalName="CA_ST_FEC_DBLQ" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FEC_DBLQ">
+                        <startPos>672</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_COD_USU_BLQ" originalName="CA_ST_COD_USU_BLQ" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_USU_BLQ">
+                        <startPos>680</startPos>
+                        <bytes>7</bytes>
+                        <maxBytes>7</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_CTA_ESP_COD" originalName="CA_ST_CTA_ESP_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_CTA_ESP_COD">
+                        <startPos>687</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_L_MONY_ACTV_DATE" originalName="CA_ST_L_MONY_ACTV_DATE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_L_MONY_ACTV_DATE">
+                        <startPos>691</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_OFFICER" originalName="CA_ST_OFFICER" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_OFFICER">
+                        <startPos>699</startPos>
+                        <bytes>7</bytes>
+                        <maxBytes>7</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MTD_CLOSE_THIS_MTH" originalName="CA_ST_MTD_CLOSE_THIS_MTH" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_CLOSE_THIS_MTH">
+                        <startPos>706</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MTD_CLOSE_THIS_DAY" originalName="CA_ST_MTD_CLOSE_THIS_DAY" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_CLOSE_THIS_DAY">
+                        <startPos>710</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_LAST_CUST_ACTV_BK_DATE" originalName="CA_ST_LAST_CUST_ACTV_BK_DATE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_LAST_CUST_ACTV_BK_DATE">
+                        <startPos>714</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_IMP_LEDGER_BAL" originalName="CA_ST_IMP_LEDGER_BAL" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_LEDGER_BAL">
+                        <startPos>722</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_FLOAT_AMT" originalName="CA_ST_IMP_FLOAT_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_FLOAT_AMT">
+                        <startPos>742</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_PROJ_ACCR_INT" originalName="CA_ST_IMP_PROJ_ACCR_INT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_PROJ_ACCR_INT">
+                        <startPos>762</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_YTD_INT_PAID" originalName="CA_ST_IMP_YTD_INT_PAID" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_YTD_INT_PAID">
+                        <startPos>782</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_INT_PAYABLE" originalName="CA_ST_IMP_INT_PAYABLE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_INT_PAYABLE">
+                        <startPos>802</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_S_TRLR_SI_BEG_BAL" originalName="CA_ST_IMP_S_TRLR_SI_BEG_BAL" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_S_TRLR_SI_BEG_BAL">
+                        <startPos>822</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PP_TRLR_TOT_AMT" originalName="CA_ST_PP_TRLR_TOT_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PP_TRLR_TOT_AMT">
+                        <startPos>842</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_CLOSING_BALANCE" originalName="CA_ST_IMP_CLOSING_BALANCE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_CLOSING_BALANCE">
+                        <startPos>862</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_TOTAL_INT_PAID" originalName="CA_ST_IMP_TOTAL_INT_PAID" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_TOTAL_INT_PAID">
+                        <startPos>882</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_EMP_PGHBRS" originalName="CA_ST_COD_EMP_PGHBRS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_EMP_PGHBRS">
+                        <startPos>902</startPos>
+                        <bytes>10</bytes>
+                        <maxBytes>10</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_RUC_EMP_CTS" originalName="CA_ST_RUC_EMP_CTS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_RUC_EMP_CTS">
+                        <startPos>912</startPos>
+                        <bytes>10</bytes>
+                        <maxBytes>10</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_PLNTLL_COMIS" originalName="CA_ST_COD_PLNTLL_COMIS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_PLNTLL_COMIS">
+                        <startPos>922</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FLAG_EMIS_EECC" originalName="CA_ST_FLAG_EMIS_EECC" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FLAG_EMIS_EECC">
+                        <startPos>926</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_INTERBANC" originalName="CA_ST_COD_INTERBANC" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_INTERBANC">
+                        <startPos>930</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FEC_VCTO" originalName="CA_ST_FEC_VCTO" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FEC_VCTO">
+                        <startPos>950</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_FEC_SGT_INT" originalName="CA_ST_FEC_SGT_INT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FEC_SGT_INT">
+                        <startPos>958</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_PLZ_CTA" originalName="CA_ST_PLZ_CTA" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PLZ_CTA">
+                        <startPos>966</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="4" scale="0"/>
+                    </field>
+                    <field name="CA_ST_TIP_PLZ_COD" originalName="CA_ST_TIP_PLZ_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_PLZ_COD">
+                        <startPos>970</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IP_CUR_ANNL_RATE" originalName="CA_ST_IP_CUR_ANNL_RATE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IP_CUR_ANNL_RATE">
+                        <startPos>974</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_FEC_PGO_INT" originalName="CA_ST_FEC_PGO_INT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_FEC_PGO_INT">
+                        <startPos>986</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_NRO_RENOVAC" originalName="CA_ST_NRO_RENOVAC" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_NRO_RENOVAC">
+                        <startPos>994</startPos>
+                        <bytes>15</bytes>
+                        <maxBytes>15</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_RENOVAC_COD" originalName="CA_ST_TIP_RENOVAC_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_RENOVAC_COD">
+                        <startPos>1009</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_RENOVAC_DES" originalName="CA_ST_TIP_RENOVAC_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_RENOVAC_DES">
+                        <startPos>1013</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PGO_INT_COD" originalName="CA_ST_PGO_INT_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PGO_INT_COD">
+                        <startPos>1033</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PGO_INT_DES" originalName="CA_ST_PGO_INT_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PGO_INT_DES">
+                        <startPos>1037</startPos>
+                        <bytes>30</bytes>
+                        <maxBytes>30</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_DIST_INT_COD" originalName="CA_ST_DIST_INT_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_DIST_INT_COD">
+                        <startPos>1067</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_DIST_INT_DES" originalName="CA_ST_DIST_INT_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_DIST_INT_DES">
+                        <startPos>1071</startPos>
+                        <bytes>30</bytes>
+                        <maxBytes>30</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PGO_CAP_COD" originalName="CA_ST_PGO_CAP_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PGO_CAP_COD">
+                        <startPos>1101</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_PGO_CAP_DES" originalName="CA_ST_PGO_CAP_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_PGO_CAP_DES">
+                        <startPos>1105</startPos>
+                        <bytes>30</bytes>
+                        <maxBytes>30</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_DEP_INI" originalName="CA_ST_IMP_DEP_INI" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_DEP_INI">
+                        <startPos>1135</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NRO_CTA_AFF_1" originalName="CA_ST_NRO_CTA_AFF_1" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_NRO_CTA_AFF_1">
+                        <startPos>1155</startPos>
+                        <bytes>14</bytes>
+                        <maxBytes>14</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIPO_CTA_AFF_1" originalName="CA_ST_TIPO_CTA_AFF_1" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIPO_CTA_AFF_1">
+                        <startPos>1169</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NRO_CTA_AFF_2" originalName="CA_ST_NRO_CTA_AFF_2" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_NRO_CTA_AFF_2">
+                        <startPos>1173</startPos>
+                        <bytes>14</bytes>
+                        <maxBytes>14</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIPO_CTA_AFF_2" originalName="CA_ST_TIPO_CTA_AFF_2" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIPO_CTA_AFF_2">
+                        <startPos>1187</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_PEN_COD" originalName="CA_ST_TIP_PEN_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_PEN_COD">
+                        <startPos>1191</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_TIP_PEN_DES" originalName="CA_ST_TIP_PEN_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_TIP_PEN_DES">
+                        <startPos>1195</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NRO_DIAS_PEN" originalName="CA_ST_NRO_DIAS_PEN" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_NRO_DIAS_PEN">
+                        <startPos>1215</startPos>
+                        <bytes>15</bytes>
+                        <maxBytes>15</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_LAST_RENEW_DATE" originalName="CA_ST_LAST_RENEW_DATE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_LAST_RENEW_DATE">
+                        <startPos>1230</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                    </field>
+                    <field name="CA_ST_IND_CTA_PLEDGE_COD" originalName="CA_ST_IND_CTA_PLEDGE_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IND_CTA_PLEDGE_COD">
+                        <startPos>1238</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_SHS_PLEDGE_AMT" originalName="CA_ST_IMP_SHS_PLEDGE_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_SHS_PLEDGE_AMT">
+                        <startPos>1242</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IND_CTA_HOLD_COD" originalName="CA_ST_IND_CTA_HOLD_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IND_CTA_HOLD_COD">
+                        <startPos>1262</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_SHS_HOLDS_AMT" originalName="CA_ST_IMP_SHS_HOLDS_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_SHS_HOLDS_AMT">
+                        <startPos>1266</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_INT_ACCRUED" originalName="CA_ST_IMP_INT_ACCRUED" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_INT_ACCRUED">
+                        <startPos>1286</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_COMISION_COBR" originalName="CA_ST_IMP_COMISION_COBR" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_COMISION_COBR">
+                        <startPos>1306</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_COMISION_PEND" originalName="CA_ST_IMP_COMISION_PEND" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_COMISION_PEND">
+                        <startPos>1326</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_BCP_DC_LTD_CRS" originalName="CA_ST_IMP_BCP_DC_LTD_CRS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_BCP_DC_LTD_CRS">
+                        <startPos>1346</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_BCP_DC_LTD_INT" originalName="CA_ST_IMP_BCP_DC_LTD_INT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_BCP_DC_LTD_INT">
+                        <startPos>1366</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_BCP_DC_LTD_DRS" originalName="CA_ST_IMP_BCP_DC_LTD_DRS" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_BCP_DC_LTD_DRS">
+                        <startPos>1386</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_BCP_DC_LTD_FRZ" originalName="CA_ST_IMP_BCP_DC_LTD_FRZ" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_BCP_DC_LTD_FRZ">
+                        <startPos>1406</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_BCP_DC_FRZ_INT" originalName="CA_ST_IMP_BCP_DC_FRZ_INT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_BCP_DC_FRZ_INT">
+                        <startPos>1426</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_EMI_NOTIF_VCTO_COD" originalName="CA_ST_EMI_NOTIF_VCTO_COD" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_EMI_NOTIF_VCTO_COD">
+                        <startPos>1446</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_EMI_NOTIF_VCTO_DES" originalName="CA_ST_EMI_NOTIF_VCTO_DES" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_EMI_NOTIF_VCTO_DES">
+                        <startPos>1450</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_EXONER_ITF" originalName="CA_ST_COD_EXONER_ITF" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_EXONER_ITF">
+                        <startPos>1470</startPos>
+                        <bytes>4</bytes>
+                        <maxBytes>4</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_SDO_PGOHAB" originalName="CA_ST_IMP_SDO_PGOHAB" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_SDO_PGOHAB">
+                        <startPos>1474</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_IMP_ITF_DELDIA" originalName="CA_ST_IMP_ITF_DELDIA" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_IMP_ITF_DELDIA">
+                        <startPos>1494</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_CIC" originalName="CA_ST_COD_CIC" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_CIC">
+                        <startPos>1514</startPos>
+                        <bytes>12</bytes>
+                        <maxBytes>12</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_TELEFONO" originalName="CA_ST_COD_TELEFONO" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_COD_TELEFONO">
+                        <startPos>1526</startPos>
+                        <bytes>14</bytes>
+                        <maxBytes>14</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_CLOSED_DATE" originalName="CA_ST_CLOSED_DATE" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_CLOSED_DATE">
+                        <startPos>1540</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MTD_DEP_NO" originalName="CA_ST_MTD_DEP_NO" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_DEP_NO">
+                        <startPos>1548</startPos>
+                        <bytes>3</bytes>
+                        <maxBytes>3</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="3" scale="0"/>
+                    </field>
+                    <field name="CA_ST_MTD_DEP_AMT" originalName="CA_ST_MTD_DEP_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_DEP_AMT">
+                        <startPos>1551</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_MTD_WD_NO" originalName="CA_ST_MTD_WD_NO" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_WD_NO">
+                        <startPos>1571</startPos>
+                        <bytes>3</bytes>
+                        <maxBytes>3</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="3" scale="0"/>
+                    </field>
+                    <field name="CA_ST_MTD_WD_AMT" originalName="CA_ST_MTD_WD_AMT" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_MTD_WD_AMT">
+                        <startPos>1574</startPos>
+                        <bytes>20</bytes>
+                        <maxBytes>20</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_GL_CC_4" originalName="CA_ST_GL_CC_4" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_GL_CC_4">
+                        <startPos>1594</startPos>
+                        <bytes>5</bytes>
+                        <maxBytes>5</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="FILL_0" originalName="FILL_0" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.FILL_0">
+                        <startPos>1599</startPos>
+                        <bytes>143</bytes>
+                        <maxBytes>143</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_REG_MOV" originalName="CA_ST_REG_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV" minOccurs="20" maxOccurs="20">
+                        <startPos>1742</startPos>
+                        <bytes>1560</bytes>
+                        <maxBytes>1560</maxBytes>
+                        <applicationDatatype datatype="ARRAY"/>
+                        <field name="CA_ST_FEC_MOV" originalName="CA_ST_FEC_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_FEC_MOV">
+                            <bytes>8</bytes>
+                            <maxBytes>8</maxBytes>
+                            <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+<typeConverter>ZONEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                        </field>
+                        <field name="CA_ST_FEC_VALUTA" originalName="CA_ST_FEC_VALUTA" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_FEC_VALUTA">
+                            <bytes>8</bytes>
+                            <maxBytes>8</maxBytes>
+                            <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+<typeConverter>ZONEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="8" scale="0"/>
+                        </field>
+                        <field name="CA_ST_REF_MOV" originalName="CA_ST_REF_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_REF_MOV">
+                            <bytes>22</bytes>
+                            <maxBytes>22</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CA_ST_IMP_OPE_MOV" originalName="CA_ST_IMP_OPE_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_IMP_OPE_MOV">
+                            <bytes>20</bytes>
+                            <maxBytes>20</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CA_ST_COD_AGE_SUC_MOV" originalName="CA_ST_COD_AGE_SUC_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_COD_AGE_SUC_MOV">
+                            <bytes>6</bytes>
+                            <maxBytes>6</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CA_ST_COD_USU_MOV" originalName="CA_ST_COD_USU_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_COD_USU_MOV">
+                            <bytes>7</bytes>
+                            <maxBytes>7</maxBytes>
+                            <applicationDatatype datatype="CHAR"/>
+                        </field>
+                        <field name="CA_ST_NRO_TRN_MOV" originalName="CA_ST_NRO_TRN_MOV" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.CA_ST_REG_MOV.CA_ST_NRO_TRN_MOV">
+                            <bytes>7</bytes>
+                            <maxBytes>7</maxBytes>
+                            <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+<typeConverter>ZONEDDECIMAL</typeConverter>
+                            </marshaller>
+                            <applicationDatatype datatype="DECIMAL" precision="7" scale="0"/>
+                        </field>
+                    </field>
+                    <field name="FILL_1" originalName="FILL_1" included="Y" path="CA_ST_REG_OUT.CA_ST_SEG_DATOS_O.FILL_1">
+                        <startPos>3302</startPos>
+                        <bytes>199</bytes>
+                        <maxBytes>199</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+                <field name="CA_ST_SEG_MSG" originalName="CA_ST_SEG_MSG" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG" redefines="CA_ST_SEG_DATOS_O">
+                    <startPos>257</startPos>
+                    <bytes>3244</bytes>
+                    <maxBytes>3244</maxBytes>
+                    <applicationDatatype datatype="STRUCT"/>
+                    <field name="CA_ST_DES_MSG" originalName="CA_ST_DES_MSG" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.CA_ST_DES_MSG">
+                        <startPos>257</startPos>
+                        <bytes>40</bytes>
+                        <maxBytes>40</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_DES_FILE" originalName="CA_ST_DES_FILE" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.CA_ST_DES_FILE">
+                        <startPos>297</startPos>
+                        <bytes>15</bytes>
+                        <maxBytes>15</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_NOM_FILE" originalName="CA_ST_NOM_FILE" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.CA_ST_NOM_FILE">
+                        <startPos>312</startPos>
+                        <bytes>8</bytes>
+                        <maxBytes>8</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_DES_RESP" originalName="CA_ST_DES_RESP" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.CA_ST_DES_RESP">
+                        <startPos>320</startPos>
+                        <bytes>15</bytes>
+                        <maxBytes>15</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                    <field name="CA_ST_COD_RESP" originalName="CA_ST_COD_RESP" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.CA_ST_COD_RESP">
+                        <startPos>335</startPos>
+                        <bytes>2</bytes>
+                        <maxBytes>2</maxBytes>
+                        <marshaller isSigned="N" isSignLeading="N" isSignSeparate="N" isWCHAROnly="N">
+                            <typeConverter>ZONEDDECIMAL</typeConverter>
+                        </marshaller>
+                        <applicationDatatype datatype="DECIMAL" precision="2" scale="0"/>
+                    </field>
+                    <field name="FILL_2" originalName="FILL_2" included="N" path="CA_ST_REG_OUT.CA_ST_SEG_MSG.FILL_2">
+                        <startPos>337</startPos>
+                        <bytes>3164</bytes>
+                        <maxBytes>3164</maxBytes>
+                        <applicationDatatype datatype="CHAR"/>
+                    </field>
+                </field>
+            </field>
+        </segment>
+    </message>
+</ns2:message>

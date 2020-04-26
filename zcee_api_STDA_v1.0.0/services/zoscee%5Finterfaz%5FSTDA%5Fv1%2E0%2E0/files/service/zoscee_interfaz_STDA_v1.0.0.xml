@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns:ns2="http://www.ibm.com/ims/Transaction">
+    <shallow>true</shallow>
+    <serviceName>zoscee_interfaz_STDA_v1.0.0</serviceName>
+    <serviceType>ims-rest</serviceType>
+    <resourceType>TRAN</resourceType>
+    <status>1</status>
+    <conversionType>3</conversionType>
+    <dataProtocol>0</dataProtocol>
+    <serviceInputInterface>
+        <metadataName>STDA_request.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="COMMAREA">
+                    <interfaceField included="Y" fieldName="RG_CA10_I_INPUT_CANAL_HEADER">
+                        <field included="Y" fieldName="RG_CA10_I_COD_INTERFAZ"/>
+                        <field included="Y" fieldName="RG_CA10_I_COD_INSTITUCION"/>
+                        <field included="Y" fieldName="RG_CA10_I_CANAL_USUARIO"/>
+                        <field included="N" fieldName="FILL_0">
+                            <field included="N" fieldName="RG_CA10_I_CANAL_TIPO"/>
+                            <field included="N" fieldName="RG_CA10_I_CANAL_INST"/>
+                            <field included="N" fieldName="RG_CA10_I_CANAL_APL"/>
+                            <field included="N" fieldName="RG_CA10_I_CANAL_AMB"/>
+                            <field included="N" fieldName="RG_CA10_I_CANAL_DISPONIBLE"/>
+                        </field>
+                        <field included="Y" fieldName="RG_CA10_I_K_USR_CODIGO"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_GREM_94"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_CTA_ESP"/>
+                        <field included="Y" fieldName="RG_CA10_I_NRO_OPE_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_I_VERSION"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_EXT_OPE"/>
+                        <field included="Y" fieldName="RG_CA10_I_NRO_OPE_CANAL_A_EXT"/>
+                        <field included="Y" fieldName="RG_CA10_I_TERMINAL_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_I_TERM_CICS_TETI"/>
+                        <field included="Y" fieldName="RG_CA10_I_KEY_MACRO_OPE">
+                            <field included="Y" fieldName="RG_CA10_I_MOP_K_CODIGO"/>
+                            <field included="Y" fieldName="RG_CA10_I_MOP_K_VERSION"/>
+                        </field>
+                        <field included="Y" fieldName="RG_CA10_I_K_USR_CODIGO_SUP"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_AUTORIZACION"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_MODO_ENTRADA"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_NEXT_DAY"/>
+                        <field included="Y" fieldName="RG_CA10_I_HORA_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_I_FECHA_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_STR_FWRD"/>
+                        <field included="Y" fieldName="RG_CA10_I_SUCURSAL_OPERACION"/>
+                        <field included="Y" fieldName="RG_CA10_I_AGENCIA_OPERACION"/>
+                        <field included="Y" fieldName="RG_CA10_I_FLAG_CONSUMO_SRV"/>
+                        <field included="Y" fieldName="RG_CA10_I_DISPONIBLE"/>
+                        <field included="Y" fieldName="RG_CA10_I_VERSION_HEADER"/>
+                    </interfaceField>
+                    <interfaceField included="Y" fieldName="CA_ST_REG_INQ">
+                        <field included="N" fieldName="CA_ST_HEADER_ESTANDAR_I">
+                            <field included="N" fieldName="CA_ST_COD_TRN_I"/>
+                            <field included="N" fieldName="CA_ST_COD_INST_I"/>
+                            <field included="N" fieldName="CA_ST_COD_CANAL_I"/>
+                            <field included="N" fieldName="CA_ST_COD_USU_I"/>
+                            <field included="N" fieldName="CA_ST_FLAG_VERIF1_I"/>
+                            <field included="N" fieldName="CA_ST_FLAG_VERIF2_I"/>
+                            <field included="N" fieldName="CA_ST_NRO_OPERACION_I"/>
+                            <field included="N" fieldName="CA_ST_NRO_VERSION_I"/>
+                            <field included="N" fieldName="CA_ST_FLAG_EXTORNO_I"/>
+                            <field included="N" fieldName="CA_ST_HEADER_DISPONIBLE_I"/>
+                        </field>
+                        <field included="Y" fieldName="CA_ST_COD_CTA_COM_I"/>
+                        <field included="Y" fieldName="CA_ST_COD_PRD_ST_I"/>
+                        <field included="Y" fieldName="CA_ST_FLAG_COBCOM_I"/>
+                        <field included="Y" fieldName="CA_ST_FLAG_CBAS_SLDS_I"/>
+                        <field included="Y" fieldName="FILL_0"/>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceInputInterface>
+    <serviceOutputInterface>
+        <metadataName>STDA_resposte.si</metadataName>
+        <serviceInterface>
+            <interface>
+                <segment segmentName="COMMAREA">
+                    <interfaceField included="Y" fieldName="RG_CA10_O_OUTPUT_CANAL_HEADER">
+                        <field included="Y" fieldName="RG_CA10_O_COD_INTERFAZ"/>
+                        <field included="Y" fieldName="RG_CA10_O_COD_INSTITUCION"/>
+                        <field included="Y" fieldName="RG_CA10_O_CANAL_USUARIO"/>
+                        <field included="N" fieldName="FILL_0">
+                            <field included="N" fieldName="RG_CA10_O_CANAL_TIPO"/>
+                            <field included="N" fieldName="RG_CA10_O_CANAL_INST"/>
+                            <field included="N" fieldName="RG_CA10_O_CANAL_APL"/>
+                            <field included="N" fieldName="RG_CA10_O_CANAL_AMB"/>
+                            <field included="N" fieldName="RG_CA10_O_CANAL_DISPONIBLE"/>
+                        </field>
+                        <field included="Y" fieldName="RG_CA10_O_RCODE"/>
+                        <field included="N" fieldName="FILL_1">
+                            <field included="N" fieldName="RG_CA10_O_RC_APL"/>
+                            <field included="N" fieldName="RG_CA10_O_RC_TIP"/>
+                            <field included="N" fieldName="RG_CA10_O_RC_SEC"/>
+                        </field>
+                        <field included="Y" fieldName="RG_CA10_O_RC_MSG"/>
+                        <field included="Y" fieldName="RG_CA10_O_NRO_OPE_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_O_LONG_RESPUESTA"/>
+                        <field included="Y" fieldName="RG_CA10_O_FLAG_AUTORIZACION"/>
+                        <field included="Y" fieldName="RG_CA10_O_TERMINAL_CANAL"/>
+                        <field included="Y" fieldName="RG_CA10_O_TERM_CICS_TETI"/>
+                        <field included="Y" fieldName="RG_CA10_O_K_USR_CODIGO"/>
+                        <field included="Y" fieldName="RG_CA10_O_NRO_CONSULTA_FFNN"/>
+                        <field included="Y" fieldName="RG_CA10_O_DISPONIBLE"/>
+                        <field included="Y" fieldName="RG_CA10_O_VERSION_HEADER"/>
+                        <field included="Y" fieldName="RG_CA10_O_FLAG_MULTIPLES_MSGS"/>
+                    </interfaceField>
+                    <interfaceField included="Y" fieldName="CA_ST_REG_OUT">
+                        <field included="N" fieldName="CA_ST_HEADER_ESTANDAR_O">
+                            <field included="N" fieldName="CA_ST_COD_TRN_O"/>
+                            <field included="N" fieldName="CA_ST_COD_INST_O"/>
+                            <field included="N" fieldName="CA_ST_COD_CANAL_O"/>
+                            <field included="N" fieldName="CA_ST_COD_RET"/>
+                            <field included="N" fieldName="CA_ST_TXT_RET">
+<field included="N" fieldName="CA_ST_TXT_RET_COD">
+    <field included="N" fieldName="CA_ST_TXT_RET_APL"/>
+    <field included="N" fieldName="CA_ST_TXT_RET_NRO"/>
+</field>
+<field included="N" fieldName="CA_ST_TXT_RET_GUION"/>
+<field included="N" fieldName="CA_ST_TXT_RET_GLOSA"/>
+                            </field>
+                            <field included="N" fieldName="CA_ST_NRO_OPERACION_O"/>
+                            <field included="N" fieldName="CA_ST_LNG_MSG"/>
+                            <field included="N" fieldName="CA_ST_HEADER_DISPONIBLE_O"/>
+                        </field>
+                        <field included="Y" fieldName="CA_ST_SEG_DATOS_O">
+                            <field included="Y" fieldName="CA_ST_COD_CTA_COM_O"/>
+                            <field included="Y" fieldName="CA_ST_COD_CTA_COM_EDIT"/>
+                            <field included="Y" fieldName="CA_ST_NOM_TIT"/>
+                            <field included="Y" fieldName="CA_ST_DIR_COR"/>
+                            <field included="Y" fieldName="CA_ST_FEC_APRT"/>
+                            <field included="Y" fieldName="CA_ST_TIP_CTA_COD"/>
+                            <field included="Y" fieldName="CA_ST_TIP_CTA_DES"/>
+                            <field included="Y" fieldName="CA_ST_TIP_AHO_DES"/>
+                            <field included="Y" fieldName="CA_ST_ACCT_TYPE"/>
+                            <field included="Y" fieldName="CA_ST_ACCT_DESC"/>
+                            <field included="Y" fieldName="CA_ST_PRD_ABREV"/>
+                            <field included="Y" fieldName="CA_ST_MON_COD"/>
+                            <field included="Y" fieldName="CA_ST_MON_DES"/>
+                            <field included="Y" fieldName="CA_ST_TIP_MON"/>
+                            <field included="Y" fieldName="CA_ST_TIP_SEG_COD"/>
+                            <field included="Y" fieldName="CA_ST_TIP_SEG_DES"/>
+                            <field included="Y" fieldName="CA_ST_STA_CTA_COD"/>
+                            <field included="Y" fieldName="CA_ST_STA_CTA_DES"/>
+                            <field included="Y" fieldName="CA_ST_TIOAUX"/>
+                            <field included="Y" fieldName="CA_ST_BRANCH"/>
+                            <field included="Y" fieldName="CA_ST_COBRO_IVA_COD"/>
+                            <field included="Y" fieldName="CA_ST_COBRO_IVA_DES"/>
+                            <field included="Y" fieldName="CA_ST_INST_COD_DES"/>
+                            <field included="Y" fieldName="CA_ST_IMP_SDO_PRO_MES"/>
+                            <field included="Y" fieldName="CA_ST_SDO_DIS"/>
+                            <field included="Y" fieldName="CA_ST_SDO_CON"/>
+                            <field included="Y" fieldName="CA_ST_TIP_BLQ_COD"/>
+                            <field included="Y" fieldName="CA_ST_TIP_BLQ_DES"/>
+                            <field included="Y" fieldName="CA_ST_FEC_DBLQ"/>
+                            <field included="Y" fieldName="CA_ST_COD_USU_BLQ"/>
+                            <field included="Y" fieldName="CA_ST_CTA_ESP_COD"/>
+                            <field included="Y" fieldName="CA_ST_L_MONY_ACTV_DATE"/>
+                            <field included="Y" fieldName="CA_ST_OFFICER"/>
+                            <field included="Y" fieldName="CA_ST_MTD_CLOSE_THIS_MTH"/>
+                            <field included="Y" fieldName="CA_ST_MTD_CLOSE_THIS_DAY"/>
+                            <field included="Y" fieldName="CA_ST_LAST_CUST_ACTV_BK_DATE"/>
+                            <field included="Y" fieldName="CA_ST_IMP_LEDGER_BAL"/>
+                            <field included="Y" fieldName="CA_ST_IMP_FLOAT_AMT"/>
+                            <field included="Y" fieldName="CA_ST_IMP_PROJ_ACCR_INT"/>
+                            <field included="Y" fieldName="CA_ST_IMP_YTD_INT_PAID"/>
+                            <field included="Y" fieldName="CA_ST_IMP_INT_PAYABLE"/>
+                            <field included="Y" fieldName="CA_ST_IMP_S_TRLR_SI_BEG_BAL"/>
+                            <field included="Y" fieldName="CA_ST_PP_TRLR_TOT_AMT"/>
+                            <field included="Y" fieldName="CA_ST_IMP_CLOSING_BALANCE"/>
+                            <field included="Y" fieldName="CA_ST_IMP_TOTAL_INT_PAID"/>
+                            <field included="Y" fieldName="CA_ST_COD_EMP_PGHBRS"/>
+                            <field included="Y" fieldName="CA_ST_RUC_EMP_CTS"/>
+                            <field included="Y" fieldName="CA_ST_COD_PLNTLL_COMIS"/>
+                            <field included="Y" fieldName="CA_ST_FLAG_EMIS_EECC"/>
+                            <field included="Y" fieldName="CA_ST_COD_INTERBANC"/>
+                            <field included="Y" fieldName="CA_ST_FEC_VCTO"/>
+                            <field included="Y" fieldName="CA_ST_FEC_SGT_INT"/>
+                            <field included="Y" fieldName="CA_ST_PLZ_CTA"/>
+                            <field included="Y" fieldName="CA_ST_TIP_PLZ_COD"/>
+                            <field included="Y" fieldName="CA_ST_IP_CUR_ANNL_RATE"/>
+                            <field included="Y" fieldName="CA_ST_FEC_PGO_INT"/>
+                            <field included="Y" fieldName="CA_ST_NRO_RENOVAC"/>
+                            <field included="Y" fieldName="CA_ST_TIP_RENOVAC_COD"/>
+                            <field included="Y" fieldName="CA_ST_TIP_RENOVAC_DES"/>
+                            <field included="Y" fieldName="CA_ST_PGO_INT_COD"/>
+                            <field included="Y" fieldName="CA_ST_PGO_INT_DES"/>
+                            <field included="Y" fieldName="CA_ST_DIST_INT_COD"/>
+                            <field included="Y" fieldName="CA_ST_DIST_INT_DES"/>
+                            <field included="Y" fieldName="CA_ST_PGO_CAP_COD"/>
+                            <field included="Y" fieldName="CA_ST_PGO_CAP_DES"/>
+                            <field included="Y" fieldName="CA_ST_IMP_DEP_INI"/>
+                            <field included="Y" fieldName="CA_ST_NRO_CTA_AFF_1"/>
+                            <field included="Y" fieldName="CA_ST_TIPO_CTA_AFF_1"/>
+                            <field included="Y" fieldName="CA_ST_NRO_CTA_AFF_2"/>
+                            <field included="Y" fieldName="CA_ST_TIPO_CTA_AFF_2"/>
+                            <field included="Y" fieldName="CA_ST_TIP_PEN_COD"/>
+                            <field included="Y" fieldName="CA_ST_TIP_PEN_DES"/>
+                            <field included="Y" fieldName="CA_ST_NRO_DIAS_PEN"/>
+                            <field included="Y" fieldName="CA_ST_LAST_RENEW_DATE"/>
+                            <field included="Y" fieldName="CA_ST_IND_CTA_PLEDGE_COD"/>
+                            <field included="Y" fieldName="CA_ST_IMP_SHS_PLEDGE_AMT"/>
+                            <field included="Y" fieldName="CA_ST_IND_CTA_HOLD_COD"/>
+                            <field included="Y" fieldName="CA_ST_IMP_SHS_HOLDS_AMT"/>
+                            <field included="Y" fieldName="CA_ST_IMP_INT_ACCRUED"/>
+                            <field included="Y" fieldName="CA_ST_IMP_COMISION_COBR"/>
+                            <field included="Y" fieldName="CA_ST_IMP_COMISION_PEND"/>
+                            <field included="Y" fieldName="CA_ST_IMP_BCP_DC_LTD_CRS"/>
+                            <field included="Y" fieldName="CA_ST_IMP_BCP_DC_LTD_INT"/>
+                            <field included="Y" fieldName="CA_ST_IMP_BCP_DC_LTD_DRS"/>
+                            <field included="Y" fieldName="CA_ST_IMP_BCP_DC_LTD_FRZ"/>
+                            <field included="Y" fieldName="CA_ST_IMP_BCP_DC_FRZ_INT"/>
+                            <field included="Y" fieldName="CA_ST_EMI_NOTIF_VCTO_COD"/>
+                            <field included="Y" fieldName="CA_ST_EMI_NOTIF_VCTO_DES"/>
+                            <field included="Y" fieldName="CA_ST_COD_EXONER_ITF"/>
+                            <field included="Y" fieldName="CA_ST_IMP_SDO_PGOHAB"/>
+                            <field included="Y" fieldName="CA_ST_IMP_ITF_DELDIA"/>
+                            <field included="Y" fieldName="CA_ST_COD_CIC"/>
+                            <field included="Y" fieldName="CA_ST_COD_TELEFONO"/>
+                            <field included="Y" fieldName="CA_ST_CLOSED_DATE"/>
+                            <field included="Y" fieldName="CA_ST_MTD_DEP_NO"/>
+                            <field included="Y" fieldName="CA_ST_MTD_DEP_AMT"/>
+                            <field included="Y" fieldName="CA_ST_MTD_WD_NO"/>
+                            <field included="Y" fieldName="CA_ST_MTD_WD_AMT"/>
+                            <field included="Y" fieldName="CA_ST_GL_CC_4"/>
+                            <field included="Y" fieldName="FILL_0"/>
+                            <field included="Y" fieldName="CA_ST_REG_MOV">
+<field included="Y" fieldName="CA_ST_FEC_MOV"/>
+<field included="Y" fieldName="CA_ST_FEC_VALUTA"/>
+<field included="Y" fieldName="CA_ST_REF_MOV"/>
+<field included="Y" fieldName="CA_ST_IMP_OPE_MOV"/>
+<field included="Y" fieldName="CA_ST_COD_AGE_SUC_MOV"/>
+<field included="Y" fieldName="CA_ST_COD_USU_MOV"/>
+<field included="Y" fieldName="CA_ST_NRO_TRN_MOV"/>
+                            </field>
+                            <field included="Y" fieldName="FILL_1"/>
+                        </field>
+                        <field included="N" fieldName="CA_ST_SEG_MSG">
+                            <field included="N" fieldName="CA_ST_DES_MSG"/>
+                            <field included="N" fieldName="CA_ST_DES_FILE"/>
+                            <field included="N" fieldName="CA_ST_NOM_FILE"/>
+                            <field included="N" fieldName="CA_ST_DES_RESP"/>
+                            <field included="N" fieldName="CA_ST_COD_RESP"/>
+                            <field included="N" fieldName="FILL_2"/>
+                        </field>
+                    </interfaceField>
+                </segment>
+            </interface>
+        </serviceInterface>
+        <version>0</version>
+    </serviceOutputInterface>
+    <applicationDataStructureType>Block</applicationDataStructureType>
+    <messageVisitorRuntimeType>CICS_COMMAREA</messageVisitorRuntimeType>
+    <ccsid>IBM037</ccsid>
+    <totalExecCount>0</totalExecCount>
+    <failedCount>0</failedCount>
+    <trancodeOverride>BCSTTP10</trancodeOverride>
+    <trimOutputLeadingWhitespace>false</trimOutputLeadingWhitespace>
+    <trimOutputTrailingWhitespace>true</trimOutputTrailingWhitespace>
+    <escapeOutputControlCharacters>false</escapeOutputControlCharacters>
+    <initializeInputFields>false</initializeInputFields>
+    <omitOutputFieldsByValue>false</omitOutputFieldsByValue>
+    <omitOutputFieldsByValueByte>0x00</omitOutputFieldsByValueByte>
+    <omitOutputEmptyTags>false</omitOutputEmptyTags>
+    <enforceMinArrayOccurrence>false</enforceMinArrayOccurrence>
+    <enforceMinArrayOccurrenceResponse>false</enforceMinArrayOccurrenceResponse>
+</service>
